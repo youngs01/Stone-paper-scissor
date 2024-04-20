@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F6F7FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.result-element{
+    font-size: 25px;
+    color: #7D2AE8;
+    
+}
+
+.game-button{
+    width: 90px;
+}
+
+.stone{
+    transform: rotate(270deg);
+}
+
+.paper{
+    transform: rotate(270deg);
+}
+
+.scissor{
+    transform: rotate(90deg);
+}
+
+.animation{
+    animation: giggle 1s ease 3 alternate;
+    /* transition: all ease ; */
+}
+
+.scissor-rotate{
+    transform: rotateY(180deg);
+}
+
+.text-display{
+    top: -30px;
+ color: #7D2AE8;   
+ 
+}
+
+
+@keyframes giggle {
+    0%{
+     transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(20deg);
+    }
+
+    100%{
+transform: rotate(-20deg);
+    }
+
+
+}
+
+@media screen and (max-width:507px) {
+    .display-punch,
+    .display-punch2{
+        width: 130px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
